@@ -1,7 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 const Headsets = () => {
-  return <div>Headsets</div>;
-};
+  return (
+    <div>
+      
+    </div>
+  )
+}
 
-export default Headsets;
+export default Headsets
