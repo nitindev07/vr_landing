@@ -5,7 +5,7 @@ import {HiMenu} from 'react-icons/hi'
 
 const Header = ({setNavMob}) => {
   return (
-    <div className='max-w-[1140px] mx-auto p-5 flex justify-between items-center'>
+    <div className='container mx-auto py-4 flex justify-between items-center' data-aos='fade-down' data-aos-duration='2000' data-aos-delay='900'>
         <img className='h-[27px]' src={logo} alt="" />
         <Nav className/>
         <HiMenu onClick={()=>setNavMob(true)} className=' lg:hidden' size={27}/>

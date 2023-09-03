@@ -7,7 +7,7 @@ import {BsFillCircleFill} from 'react-icons/bs'
 
 const Users = () => {
   return (
-    <div className="flex flex-col justify-center items-center md:flex-row gap-7 md:justify-start">
+    <div data-aos='fade-down' data-aos-delay='900' className="flex flex-col justify-center items-center md:flex-row gap-7 md:justify-start">
       <div className="flex -space-x-4 rounded-full">
         <div>
           <img  className="w-12 h-12 rounded-full" src={Avt1} alt="" />
@@ -30,4 +30,4 @@ const Users = () => {
   );
 };
 
-export default Users
+export default Users;

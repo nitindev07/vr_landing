@@ -1,17 +1,36 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Banner from './components/Banner'
 import Header from './components/Header'
 import NavMobile from './components/NavMobile'
+import Experience from './components/Experience'
+// import Video from './components/Video'
+import Headsets from './components/Headsets'
+import Testimonial from './components/Testimonial'
+import Explore from './components/Explore'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const App = () => {
+  useEffect(()=>{
+    Aos.init({
+      duration:1500,
+      delay:250
+    });
+  });
   const [navMob,setNavMob]=useState(false)
   return (
-    <div className='App relative before:bg-circle before:h-[200px] before:w-[600px] before:absolute before:-top-16 before:left-[600px] before:hidden before:lg:flex before:bg-no-repeat'>
+    <div className='App relative before:bg-circle before:h-[200px] before:w-[600px] before:absolute before:-top-24 before:left-[400px] before:hidden before:lg:flex before:bg-no-repeat'>
       <Header setNavMob={setNavMob}/>
       <Banner/>
       <div className={`${navMob ? 'right-[0%]':'-right-full'} fixed duration-200 top-0 bottom-0 w-48 transition-all`}>
       <NavMobile setNavMob={setNavMob}/>
       </div>
+      <Experience/>
+      {/* <Video/> */}
+      <Headsets/>
+      <Testimonial/>
+      <Explore/>
     </div>
   )
 }
