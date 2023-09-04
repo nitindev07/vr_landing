@@ -30,7 +30,7 @@ module.exports = {
       },
       backgroundImage: {
         radialBgCircle: "url('/src/assets/img/radial-bg.svg')",
-        videoBg: "url('/src/assets/img/video-bg.png')",
+        
         circle: "url('/src/assets/img/circle.png')",
         explore: "url('/src/assets/img/explore.png')",
       },
