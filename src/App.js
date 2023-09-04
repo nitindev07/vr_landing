@@ -13,8 +13,8 @@ import 'aos/dist/aos.css'
 const App = () => {
   useEffect(()=>{
     Aos.init({
-      duration:2000,
-      delay:400
+      duration:1700,
+      delay:300
     });
   });
   const [navMob,setNavMob]=useState(false)
