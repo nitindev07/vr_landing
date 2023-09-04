@@ -3,7 +3,6 @@ import Banner from './components/Banner'
 import Header from './components/Header'
 import NavMobile from './components/NavMobile'
 import Experience from './components/Experience'
-// import Video from './components/Video'
 import Headsets from './components/Headsets'
 import Testimonial from './components/Testimonial'
 import Explore from './components/Explore'
@@ -27,7 +26,6 @@ const App = () => {
       <NavMobile setNavMob={setNavMob}/>
       </div>
       <Experience/>
-      {/* <Video/> */}
       <Headsets/>
       <Testimonial/>
       <Explore/>
