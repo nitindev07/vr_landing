@@ -21,7 +21,7 @@ const Experience = () => {
             />
           </div>
         </div>
-        <div data-aos='fade-left' data-aos-offset='300' className="flex-1 flex flex-col items-start justify-center mt-6 lg:mt-0 ">
+        <div data-aos='fade-up' data-aos-offset='300' className="flex-1 flex flex-col items-start justify-center mt-6 lg:mt-0 ">
           <h2 className="text-3xl font-bold mb-6">
             New Experience in Playing Games
           </h2>

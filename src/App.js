@@ -14,8 +14,8 @@ import 'aos/dist/aos.css'
 const App = () => {
   useEffect(()=>{
     Aos.init({
-      duration:1500,
-      delay:250
+      duration:2500,
+      delay:400
     });
   });
   const [navMob,setNavMob]=useState(false)
@@ -23,7 +23,7 @@ const App = () => {
     <div className='App relative before:bg-circle before:h-[200px] before:w-[600px] before:absolute before:-top-24 before:left-[400px] before:hidden before:lg:flex before:bg-no-repeat'>
       <Header setNavMob={setNavMob}/>
       <Banner/>
-      <div className={`${navMob ? 'right-[0%]':'-right-full'} fixed duration-200 top-0 bottom-0 w-48 transition-all`}>
+      <div className={`${ navMob ? 'right-0':'-right-full'} fixed duration-500 z-10 top-0 bottom-0 transition-all`}>
       <NavMobile setNavMob={setNavMob}/>
       </div>
       <Experience/>
